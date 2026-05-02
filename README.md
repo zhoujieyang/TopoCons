@@ -2,7 +2,7 @@
 
 Anonymous minimal code release for reproducibility.
 
-This repository provides a minimal runnable implementation of the differentiable PH proxy loss used in the submitted paper.
+This repository provides a minimal runnable implementation of the topology component used in the submitted paper, including the differentiable PH proxy loss and the conservative topology-consistency injection pathway exposed through `topo_addon`.
 
 ## Repository Structure
 
@@ -40,7 +40,7 @@ From the repository root, run:
 python demo_topo_addon.py
 ```
 
-The demo constructs random student and teacher logits, evaluates the current `topo_addon`, and verifies that the backward pass runs successfully.
+The demo constructs random student and teacher logits, evaluates `topo_addon`, and verifies that the forward and backward passes run successfully.
 
 ## Method Overview
 
@@ -49,4 +49,8 @@ The demo constructs random student and teacher logits, evaluates the current `to
 ## Notes
 
 * This is a minimal anonymous release for reproducibility.
-* It is not intended to reproduce the full training framework of the paper.
+* It is intended to demonstrate the proposed topology component and its backward behavior.
+* It is not intended to reproduce the full UCOD training framework or all experimental results in the paper.
+* Full experimental settings, datasets, carrier protocol, and run-specific configurations are described in the paper and appendix.
+
+README 本身现在没有匿名性问题。当前只建议按上面版本稍微增强与论文主张的一致性。
