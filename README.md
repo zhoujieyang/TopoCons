@@ -52,5 +52,3 @@ The demo constructs random student and teacher logits, evaluates `topo_addon`, a
 * It is intended to demonstrate the proposed topology component and its backward behavior.
 * It is not intended to reproduce the full UCOD training framework or all experimental results in the paper.
 * Full experimental settings, datasets, carrier protocol, and run-specific configurations are described in the paper and appendix.
-
-README 本身现在没有匿名性问题。当前只建议按上面版本稍微增强与论文主张的一致性。
